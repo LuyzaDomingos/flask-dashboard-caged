@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Informações CAGED</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container text-center">
+
+        <h1 class="mt-5">DASHBOARD DE INFORMAÇÕES CAGED</h1>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <a href="{{ url_for('ranking') }}" class="btn">
+                    <img src="{{ url_for('static', filename='images/ranking.png') }}" alt="Ranking" class="icon">
+                    <p>RANKING DE ATIVIDADES</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="{{ url_for('estatisticas') }}" class="btn">
+                    <img src="{{ url_for('static', filename='images/painel.png') }}" alt="Estatísticas" class="icon">
+                    <p>ESTATÍSTICAS</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="{{ url_for('regiao') }}" class="btn">
+                    <img src="{{ url_for('static', filename='images/brazil.png') }}" alt="Região" class="icon">
+                    <p>REGIÃO</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
