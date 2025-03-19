@@ -1,5 +1,5 @@
 from app import app
-from flask import Flask, render_template
+from flask import render_template
 
 @app.route('/')
 def index():
@@ -11,8 +11,7 @@ def ranking():
 
 @app.route("/estatisticas")
 def estatisticas():
-    return "<h1>Página de Estatísticas</h1>"
-
+    return render_template('estatisticabase.html')
 
 @app.route("/regiao")
 def regiao():
